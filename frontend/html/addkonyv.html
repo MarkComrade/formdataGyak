@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Főoldal</title>
+        <!--!Bootstrap-->
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+        <!--?Popper: dropdowns, popovers, tooltips-->
+        <script src="../bootstrap/js/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <!--!CSS-->
+        <link rel="stylesheet" href="../css/index.css" />
+        <!--!JavaScript-->
+        <script src="../javascript/index.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="addkonyv.html">Könyv hozzáadása</a></li>
+                <li><a href="viewkonyv.html">Könyv megtekintése</a></li>
+            </ul>
+        </nav>
+
+        <form id="konyvForm" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="cim" class="form-label">Cím</label>
+                <input type="text" class="form-control" id="cim" name="cim">
+            </div>
+            <div class="mb-3">
+                <label for="szerzo" class="form-label">Szerző</label>
+                <input type="text" class="form-control" id="szerzo" name="szerzo">
+            </div>
+            <div class="mb-3">
+                <label for="kiado" class="form-label">Kiadó</label>
+                <input type="text" class="form-control" id="kiado" name="kiado">
+            </div>
+            <div class="mb-3">
+                <label for="kiadas" class="form-label">Kiadás éve</label>
+                <input type="number" class="form-control" id="kiadasEve" name="kiadas">
+            </div>
+            <div class="mb-3">
+                <label for="oldalszam" class="form-label">Oldalszám</label>
+                <input type="number" class="form-control" id="oldalszam" name="oldal">
+            </div>
+            <div class="mb-3">
+                <label for="mufaj" class="form-label">Műfaj</label>
+                <input type="text" class="form-control" id="mufaj" name="mufaj">
+            </div>
+            <div class="mb-3">
+                <label for="ar" class="form-label">Ár</label>
+                <input type="number" class="form-control" id="ar" name="ar">
+            </div>
+
+            <input type="button" class="btn btn-primary" value="Könyv hozzáadása" id="submitBtn">
+        </form>
+    </body>
+</html>

@@ -24,8 +24,14 @@ app.use(
 
 //!Routing
 //?Főoldal:
-router.get('/', (request, response) => {
+router.get('/index.html', (request, response) => {
     response.sendFile(path.join(__dirname, '../frontend/html/index.html'));
+});
+router.get('/addkonyv.html', (request, response) => {
+    response.sendFile(path.join(__dirname, '../frontend/html/addkonyv.html'));
+});
+router.get('/viewkonyv.html', (request, response) => {
+    response.sendFile(path.join(__dirname, '../frontend/html/viewkonyv.html'));
 });
 
 //!API endpoints

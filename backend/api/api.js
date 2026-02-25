@@ -41,4 +41,22 @@ router.get('/testsql', async (request, response) => {
     }
 });
 
+router.post('/addbook', upload.none(), async (request, response) => { 
+    try {
+        const bookData = request.body;
+        console.log(bookData)
+        const insertId = await database.insertBook(bookData);
+        response.status(200).json({
+            message: 'Könyv sikeresen hozzáadva.',
+            bookId: insertId
+        });
+    }
+    catch (error) {
+        console.error('Hiba a könyv hozzáadásakor:', error);
+        response.status(500).json({
+            message: 'Hiba történt a könyv hozzáadásakor.'
+        });
+    }
+});
+
 module.exports = router;

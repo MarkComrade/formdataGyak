@@ -1,0 +1,6 @@
+###
+
+POST http://localhost:3000/addbook
+Content-Type: application/x-www-form-urlencoded
+
+username = teszt&cim=teszt&szerzo=teszt&kiado=teszt&kiadas=2024-01-01&oldalszam=100&mufaj=teszt&ar=1000
