@@ -21,3 +21,11 @@ INSERT INTO konyv (cim, szerzo, kiado, kiadas, oldalak, mufaj, ar) VALUES
 ('A Gyűrű Szövetsége', 'J.R.R. Tolkien', 'Könyvmolyképző Kiadó', 1954, 423, 'Fantasy', 2999),
 ('A Két Torony', 'J.R.R. Tolkien', 'Könyvmolyképző Kiadó', 1954, 352, 'Fantasy', 2999),
 ('A Király Visszatér', 'J.R.R. Tolkien', 'Könyvmolyképző Kiadó', 1955, 416, 'Fantasy', 2999);
+
+CREATE DATABASE masodikfeladat
+COLLATE utf8_hungarian_ci
+DEFAULT CHARACTER SET utf8;
+
+CREATE TABLE auto (
+    
+)

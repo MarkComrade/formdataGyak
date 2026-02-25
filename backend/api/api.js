@@ -59,4 +59,20 @@ router.post('/addbook', upload.none(), async (request, response) => {
     }
 });
 
+router.get('/getbooks', async (request, response) => {
+    try {
+        const books = await database.selectall();
+
+        response.status(200).json({
+            message: 'Könyvek sikeresen lekérve.',
+            books: books
+        });
+    } catch (error) {
+        console.error('Hiba a könyvek lekérésekor:', error);
+        response.status(500).json({
+            message: 'Hiba történt a könyvek lekérésekor.'
+        });
+    }
+});
+
 module.exports = router;
