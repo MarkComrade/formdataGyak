@@ -27,5 +27,9 @@ COLLATE utf8_hungarian_ci
 DEFAULT CHARACTER SET utf8;
 
 CREATE TABLE auto (
-    
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    marka VARCHAR(255) NOT NULL,
+    gyarev INT NOT NULL,
+    alvazszam VARCHAR(255) NOT NULL,
+    loero INT NOT NULL,
 )
